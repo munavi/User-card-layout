@@ -1,49 +1,92 @@
 //====================================================================================================
 .header {
 	&__container{
-		max-width: 1002px;
+		max-width: 1022px;
+		padding: 0px 10px;
+		margin: 0 auto;
+	}
+
+	&__menu {
+		padding: 0px 10px;
+		height: 82px;
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+		@media (max-width:$mobile){
+			  height: 50px;
+		}
 	}
 	
-	.header {
-
-		&__container {
-		}
-
-		&__menu {
-		}
 }
+
 .menu {
 
-		&__icon {
+	&__icon {
+	}
+
+	&__body {
+		@media(max-width: $mobile){
+			transform: translate(0px, -100%);
+			transition: transform 0.8s ease 0s;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			overflow: auto;
+			padding: 60px 10px 30px 10px;
+			background-color: rgba(255, 255, 255, 0.75);
+			.menu-open & {
+				transform: translate(0px, 0%);
+			}
+		}
+	}
+
+	&__list {
+		li {
+			margin: 0px 0px 25px 0px;
+			&:last-child{
+				margin: 0px;
+			}
+		}
+		@media(min-width: $mobile){
+			display: flex;
+			li{
+				margin: 0px 33px 0px 0px;
+			}
 		}
 
-		&__body {
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-size: 20px;
+		font-weight: 500;
+		color: #000;
+		transition: all 0.4s ease 0s;
+		@media (min-width: $pc){
+			&:hover{
+				color: #ff6464;				
+			}
+		}
+		@media (max-width:$mobile){
+			font-size: 35px;
+			display: block;
+			text-align: center;
 		}
 
-		&__list {
-		}
 
-		&__item {
-		}
-
-		&__link {
-		}
+	}
 }
-.icon-menu {
-}
 
-}
-
-//====================================================================================================
-
-//Burger
-/*
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
 		display: block;
 		position: relative;
-		width: rem(30);
+		width: rem(30); 
 		height: rem(18);
 		cursor: pointer;
 		z-index: 5;
@@ -85,4 +128,12 @@
 		}
 	}
 }
+
+
+
+//====================================================================================================
+
+//Burger
+/*
+
 */
