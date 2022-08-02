@@ -1,5 +1,7 @@
 //====================================================================================================
 .header {
+	position: relative;
+	z-index: 100;
 	&__container{
 		max-width: 1022px;
 		padding: 0px 10px;
@@ -13,7 +15,7 @@
 		display: flex;
 		justify-content: flex-end;
 		@media (max-width:$mobile){
-			  height: 50px;
+			height: 50px;
 		}
 	}
 	
@@ -35,7 +37,7 @@
 			left: 0;
 			overflow: auto;
 			padding: 60px 10px 30px 10px;
-			background-color: rgba(255, 255, 255, 0.75);
+			background-color: rgba(255, 255, 255, 0.95);
 			.menu-open & {
 				transform: translate(0px, 0%);
 			}
@@ -128,12 +130,3 @@
 		}
 	}
 }
-
-
-
-//====================================================================================================
-
-//Burger
-/*
-
-*/
