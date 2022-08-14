@@ -7,7 +7,6 @@
 		padding: 0px 10px;
 		margin: 0 auto;
 	}
-
 	&__menu {
 		padding: 0px 10px;
 		height: 82px;
@@ -20,12 +19,7 @@
 	}
 	
 }
-
 .menu {
-
-	&__icon {
-	}
-
 	&__body {
 		@media(max-width: $mobile){
 			transform: translate(0px, -100%);
@@ -43,7 +37,6 @@
 			}
 		}
 	}
-
 	&__list {
 		li {
 			margin: 0px 0px 25px 0px;
@@ -57,12 +50,7 @@
 				margin: 0px 33px 0px 0px;
 			}
 		}
-
 	}
-
-	&__item {
-	}
-
 	&__link {
 		font-size: 20px;
 		font-weight: 500;
@@ -78,11 +66,8 @@
 			display: block;
 			text-align: center;
 		}
-
-
 	}
 }
-
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
@@ -110,14 +95,11 @@
 			bottom: 0;
 		}
 		span {
-			top: calc(50% - rem(1));
+			top: calc(50% - rem(0.5));
 		}
 		.menu-open & {
 			span {
 				width: 0;
-			}
-			&::before,
-			&::after {
 			}
 			&::before {
 				top: calc(50% - rem(1));
